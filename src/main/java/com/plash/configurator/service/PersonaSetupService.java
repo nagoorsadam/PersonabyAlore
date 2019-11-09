@@ -161,9 +161,9 @@ public class PersonaSetupService implements Constants {
                                         }
                                     } else {
                                         if (personaAnswers.getAnswer().equalsIgnoreCase("Other")) {
-                                            ansToAdd = ansToAdd + " , " + personaAnswers.getAnswer() + " = " + p.getAnswer();
+                                            ansToAdd = ansToAdd + personaAnswers.getAnswer() + " = " + p.getAnswer();
                                         } else {
-                                            ansToAdd = ansToAdd + " , " + personaAnswers.getAnswer();
+                                            ansToAdd = ansToAdd + personaAnswers.getAnswer();
                                         }
                                     }
                                 }
