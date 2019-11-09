@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.business.sdk:facebook-java-business-sdk:3.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.business.sdk/facebook-java-business-sdk/3.0.0/a9149fe56457b56b3f12517585b69044ddd49c76/facebook-java-business-sdk-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.business.sdk/facebook-java-business-sdk/3.0.0/d4e4e2f5c9c2e8da3281b5bd8edb4f29d8af94a3/facebook-java-business-sdk-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

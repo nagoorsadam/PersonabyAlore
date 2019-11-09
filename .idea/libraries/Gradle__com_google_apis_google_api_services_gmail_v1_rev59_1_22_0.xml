@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.apis:google-api-services-gmail:v1-rev59-1.22.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-gmail/v1-rev59-1.22.0/a56a6926afc9b2ab64d1a74b5215b28a1835ff21/google-api-services-gmail-v1-rev59-1.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-gmail/v1-rev59-1.22.0/1a5de28ccf188975e7d23aae2b7c2ce2d48ec53/google-api-services-gmail-v1-rev59-1.22.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

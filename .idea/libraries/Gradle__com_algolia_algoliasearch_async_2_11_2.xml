@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.algolia:algoliasearch-async:2.11.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/algoliasearch-async/2.11.2/c941aa508983b575add5549abec4386836434415/algoliasearch-async-2.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/algoliasearch-async/2.11.2/54bc3a12c47d2457b019fbbf739597844dfab666/algoliasearch-async-2.11.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

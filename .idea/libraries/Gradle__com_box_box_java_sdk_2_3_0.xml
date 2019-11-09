@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.box:box-java-sdk:2.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.box/box-java-sdk/2.3.0/49e783b0f7be29f0cea1f236c432597bb0697ac/box-java-sdk-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.box/box-java-sdk/2.3.0/fd26324474471138a950f012e02a90ef218187d9/box-java-sdk-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: :duckling-0.4.23-standalone:">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/duckling-0.4.23-standalone.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

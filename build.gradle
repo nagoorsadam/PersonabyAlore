@@ -1,0 +1,171 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+        jcenter()
+
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+//apply plugin: 'war'
+
+//to run on localhost
+jar {
+    baseName = 'persona'
+    version = 'development-v1'
+}
+//comment whn run on localhost
+springBoot {
+    executable = true
+}
+//to run on AS(Jboss/WildFly)
+/*war {
+    baseName = 'crm'
+   // version =  '0.0.1'
+}*/
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+repositories {
+    flatDir {
+        dirs './src/main/resources'
+    }
+}
+dependencies {
+    compile name: 'duckling-0.4.23-standalone'
+    compile name: 'libphonenumber-8.4.1'
+    compile name: 'checksum_2.0.0'
+    compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
+}
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url "http://repo.spring.io/libs-snapshot" }
+
+}
+
+dependencies {
+    //compileOnly('org.projectlombok:lombok')
+    //swaggerCompile 'org.springframework.boot:spring-boot-starter-web'
+    compile("org.springframework.boot:spring-boot-starter-data-rest")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile('org.springframework.boot:spring-boot-starter-web')/*{
+    //to run on AS(Jboss/WildFly) remove comment from providedRuntime comment this:
+        exclude module: "spring-boot-starter-tomcat"
+    }*/
+    compile("org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-undertow:1.5.1.RELEASE")
+
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('mysql:mysql-connector-java')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile("io.springfox:springfox-swagger2:2.6.1")
+    compile group: 'com.mangofactory', name: 'swagger-springmvc', version: '1.0.2'
+
+    //Ostermiller utility is added for converting web safe base 64,specially for gmail replies
+    // https://mvnrepository.com/artifact/org.ostermiller/utils
+    compile group: 'org.ostermiller', name: 'utils', version: '1.07.00'
+
+// https://mvnrepository.com/artifact/com.sun.mail/javax.mail
+    compile group: 'com.sun.mail', name: 'javax.mail', version: '1.6.0'
+
+
+    //compile group: 'javax.mail', name: 'mail', version: '1.4.7'
+    compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.0-alpha3'
+
+    compile group: 'org.scribe', name: 'scribe', version: '1.3.7'
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.10.2'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.0'
+
+    // https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit
+    compile group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.4'
+
+
+    //to run on AS(Jboss/WildFly) remove comment from providedRuntime comment this:
+    /*providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")*/
+    //Standford core lib
+    /*compile('edu.stanford.nlp:stanford-corenlp:3.6.0')
+    compile('edu.stanford.nlp:stanford-corenlp:3.6.0:models')*/
+
+    //duckling dependency
+    //compile files('./src/main/resources/duckling-0.4.23-standalone.jar')
+    compile "org.clojure:data.json:0.2.6"
+    // compile fileTree(dir: 'lib', include: '*.jar')
+
+// https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk16
+    compile group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.45'
+// https://mvnrepository.com/artifact/net.sargue/mailgun
+    compile group: 'net.sargue', name: 'mailgun', version: '1.0.0'
+    compile 'net.sargue:mailgun:1.3.2'
+    //for gmail webhook integration
+    compile 'com.google.api-client:google-api-client:1.22.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.22.0'
+    compile 'com.google.apis:google-api-services-gmail:v1-rev59-1.22.0'
+    compile("org.projectlombok:lombok:1.16.12")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile group: 'com.opencsv', name: 'opencsv', version: '3.3'
+    compile group: 'com.google.apis', name: 'google-api-services-pubsub', version: 'v1-rev351-1.22.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-activemq', version: '1.4.0.RELEASE'
+    compile group: 'com.microsoft.azure', name: 'azure-storage', version: '4.0.0'
+    compile group: 'commons-httpclient', name: 'commons-httpclient', version: '3.1'
+    compile group: 'org.apache.poi', name: 'poi', version: '3.9'
+
+    // Attachments
+    // https://mvnrepository.com/artifact/com.dropbox.core/dropbox-core-sdk
+    compile 'com.dropbox.core:dropbox-core-sdk:3.0.4'
+    // https://mvnrepository.com/artifact/com.box/box-java-sdk
+    compile group: 'com.box', name: 'box-java-sdk', version: '2.3.0'
+    compile 'com.google.apis:google-api-services-drive:v3-rev65-1.22.0'
+    // https://mvnrepository.com/artifact/com.stripe/stripe-java
+    // compile group: 'com.stripe', name: 'stripe-java', version: '5.6.0'
+    compile group: 'com.stripe', name: 'stripe-java', version: '7.26.0'
+
+    // https://mvnrepository.com/artifact/com.univocity/univocity-parsers
+    compile group: 'com.univocity', name: 'univocity-parsers', version: '2.4.1'
+
+    // https://mvnrepository.com/artifact/com.microsoft.azure/azure-core
+    compile group: 'com.microsoft.azure', name: 'azure-core', version: '0.9.7'
+    // https://mvnrepository.com/artifact/com.microsoft.azure/azure-servicebus
+    compile group: 'com.microsoft.azure', name: 'azure-servicebus', version: '0.9.7'
+    // https://mvnrepository.com/artifact/com.newrelic.agent.java/newrelic-api
+    //compile group: 'com.newrelic.agent.java', name: 'newrelic-api', version: '2.14.1'
+
+    compile group: 'com.algolia', name: 'algoliasearch', version: '2.11.2'
+    compile group: 'com.algolia', name: 'algoliasearch-async', version: '2.11.2'
+    compile group: 'com.algolia', name: 'algoliasearch-appengine', version: '2.11.2'
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
+    compile("org.springframework.boot:spring-boot-starter-websocket")
+    // https://mvnrepository.com/artifact/org.apache.activemq/activemq-broker
+    compile group: 'org.apache.activemq', name: 'activemq-broker', version: '5.13.0'
+    compile group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.4'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+    // sendgrid api
+    compile 'com.sendgrid:sendgrid-java:4.1.2'
+    compile group: "com.twilio.sdk", name: "twilio", version: "7.17.+"
+    // https://mvnrepository.com/artifact/com.facebook.ads.sdk/facebook-java-ads-sdk
+    compile group: 'com.facebook.business.sdk', name: 'facebook-java-business-sdk', version: '3.0.0'
+    compile group: 'com.google.guava', name: 'guava', version: '20.0'
+    compile('org.springframework.kafka:spring-kafka')
+
+    // paypal dependency
+    compile 'com.paypal.sdk:rest-api-sdk:+'
+    compile 'io.intercom:intercom-java:2.5.2'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile (group: 'com.intuit.quickbooks-online', name: 'oauth2-platform-api', version: '4.0.3', classifier: 'jar-with-dependencies')
+}
+

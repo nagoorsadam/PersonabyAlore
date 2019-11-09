@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.intercom:intercom-java:2.5.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.intercom/intercom-java/2.5.2/1bd07603053170a7899b2bdb4d5aa6ead90e3574/intercom-java-2.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.intercom/intercom-java/2.5.2/8599208dc43b44898398843e54b1130310ca8ac9/intercom-java-2.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.algolia:algoliasearch-appengine:2.11.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/algoliasearch-appengine/2.11.2/aff2d8429bf7d7912c465e5ac357454735171834/algoliasearch-appengine-2.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.algolia/algoliasearch-appengine/2.11.2/31fea8bcf532346a14cacbcca51bdb9123522a80/algoliasearch-appengine-2.11.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
